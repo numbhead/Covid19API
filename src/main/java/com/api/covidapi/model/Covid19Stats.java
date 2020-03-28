@@ -3,76 +3,36 @@ package com.api.covidapi.model;
 import java.util.Date;
 
 public class Covid19Stats {
-    private String city;
-    private String country;
-    private String province;
-    private Date lastUpdate;
-    private String keyId;
-    private long confirmed;
-    private long deaths;
-    private long recovered;
-
-    public String getCity() {
-        return city;
+	boolean success;
+	Data data;
+	Date lastRefreshed;
+	Date lastOriginUpdate;
+	
+	public boolean isSuccess() {
+		return success;
+	}
+	public void setSuccess(boolean success) {
+		this.success = success;
+	}
+	public Data getData() {
+		return data;
+	}
+	public void setData(Data data) {
+		this.data = data;
+	}
+	
+	public Date getLastRefreshed() {
+		return lastRefreshed;
+	}
+	public void setLastRefreshed(Date lastRefreshed) {
+		this.lastRefreshed = lastRefreshed;
+	}
+	public Date getLastOriginUpdate() {
+		return lastOriginUpdate;
+	}
+	public void setLastOriginUpdate(Date lastOriginUpdate) {
+		this.lastOriginUpdate = lastOriginUpdate;
+	}
+	
+	
     }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getProvince() {
-        return province;
-    }
-
-    public void setProvince(String province) {
-        this.province = province;
-    }
-
-    public Date getLastUpdate() {
-        return lastUpdate;
-    }
-
-    public void setLastUpdate(Date lastUpdate) {
-        this.lastUpdate = lastUpdate;
-    }
-
-    public String getKeyId() {
-        return keyId;
-    }
-
-    public void setKeyId(String keyId) {
-        this.keyId = keyId;
-    }
-
-    public long getConfirmed() {
-        return confirmed;
-    }
-
-    public void setConfirmed(long confirmed) {
-        this.confirmed = confirmed;
-    }
-
-    public long getDeaths() {
-        return deaths;
-    }
-
-    public void setDeaths(long deaths) {
-        this.deaths = deaths;
-    }
-
-    public long getRecovered() {
-        return recovered;
-    }
-
-    public void setRecovered(long recovered) {
-        this.recovered = recovered;
-    }
-}
