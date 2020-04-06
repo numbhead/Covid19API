@@ -33,6 +33,5 @@ public class Covid19Stats {
 	public void setLastOriginUpdate(Date lastOriginUpdate) {
 		this.lastOriginUpdate = lastOriginUpdate;
 	}
-	
-	
+		
     }
